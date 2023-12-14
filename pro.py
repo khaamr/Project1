@@ -466,5 +466,5 @@ fig.show()
 ''')
     st.header('Conclusion')
     '''On the basis of the dataset provided, it can be concluded that the salary depends significantly on the level of education and gender. '
-            'And also for the start of a career. Seniers are influenced by factors such as age and experience. The most high-tailoring professions were: Date Scientist, Date Analyst, Content Manager'''
+            'And also for the start of a career. Seniors are influenced by factors such as age and experience. The most high-tailoring professions were: Date Scientist, Date Analyst, Content Manager'''
     st.text('Thank you!')
