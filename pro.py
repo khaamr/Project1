@@ -72,7 +72,12 @@ value_counts = df['Job Title'].value_counts()
 to_remove = value_counts[value_counts<10].index
 df = df[~df['Job Title'].isin(to_remove)]
 df['Job Title'].value_counts()
-df''')
+df
+#Filtering: The DataFrame is filtered using boolean indexing. 
+#The ~ operator is used to select rows where the 'Job Title' is not in the list of job titles to remove (to_remove).
+#After filtering, a new count of job titles is calculated for the remaining data.
+#The counts of each job title after filtering and the filtered DataFrame are printed.
+''')
     st.write(df.head())
     st.text('Time to find the highest paying jobs')
     df2 = df.groupby('Job Title')
