@@ -96,7 +96,7 @@ sorted_highest_paid_jobs''')
     fig = px.scatter(sorted_highest_paid_jobs, x='Job Title', y='Salary',
                      color='Job Title',   # Each job title gets its own marker color
                      size='Salary',
-                     size_max=40, title='Distribution of Salaries',template='simple_white')
+                     size_max=40, title='<b>Distribution of Salaries<b>',template='simple_white')
 
     fig.update_layout(width=1000, height=600)
     fig.update_layout(showlegend=False)
