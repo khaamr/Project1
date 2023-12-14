@@ -91,7 +91,7 @@ sorted_highest_paid_jobs''')
     fig = px.scatter(sorted_highest_paid_jobs, x='Job Title', y='Salary',
                      color='Job Title',   # Each job title gets its own marker color
                      size='Salary',
-                     size_max=40, title='Boxplot Distribution of Salaries',template='simple_white')
+                     size_max=40, title='Distribution of Salaries',template='simple_white')
 
     fig.update_layout(width=1000, height=600)
     fig.update_layout(showlegend=False)
@@ -165,9 +165,9 @@ for i in range(len(fig.data)):
         showarrow=False,
         font=dict(size=14.5),
     ))
-    In addition, mens salaries are a bit inelastic to education level compared to female salaries.
+    In addition, mens salaries are a bit inelastic to race compared to female salaries.
 fig.show()''')
-    st.text('Thus, mens salaries are inelastic to education level compared to female salaries.The male and female distributions are about the same')
+    st.text('Thus, mens salaries are inelastic to race level compared to female salaries.The male and female distributions are about the same')
     st.text('Maybe we can check it more in detain through a histogram? And compare the other indicators')
     fig = px.histogram(
         df,
@@ -379,7 +379,7 @@ fig.show()
     import plotly.express as px
 
     fig = px.box(df2, x='Salary', y='Race', color='Senior', notched=True,
-                 title='<b>Salaries of seigneurs among different races<b>')
+                 title='<b>Salaries of Seniors among different races<b>')
     fig.update_layout(width=1000, height=600)
     st.plotly_chart(fig, theme=None)
     st.code('''import plotly.express as px
@@ -466,5 +466,5 @@ fig.show()
 ''')
     st.header('Conclusion')
     '''On the basis of the dataset provided, it can be concluded that the salary depends significantly on the level of education and gender. '
-            'And also for the start of a career. Seniers are influenced by factors such as age and experience. The most high-tailoring professions were: Date Cyntist, Date Analyst, Content Manager'''
+            'And also for the start of a career. Seniers are influenced by factors such as age and experience. The most high-tailoring professions were: Date Scientist, Date Analyst, Content Manager'''
     st.text('Thank you!')
