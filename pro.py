@@ -380,7 +380,7 @@ fig.show()
 
     fig = px.box(df2, x='Salary', y='Race', color='Senior', notched=True,
                  title='<b>Salaries of Seniors among different races<b>')
-    fig.update_layout(width=1000, height=600)
+    fig.update_layout(width=600, height=600)
     st.plotly_chart(fig, theme=None)
     st.code('''import plotly.express as px
 fig = px.box(df2, x='Salary', y='Race', color='Senior', notched=True,
