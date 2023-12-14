@@ -1,4 +1,4 @@
-import pandas as pd
+fimport pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
@@ -120,7 +120,7 @@ fig.show()
     fig = px.scatter(highest_paid_jobs, x="Salary", y="Years of Experience", size="Education Level",
                      color="Education Level", marginal_x="violin", marginal_y="histogram", trendline="ols",
                      trendline_color_override='#27187e')
-    fig.update_layout(width=800, height=800, template='simple_white','<b>Exploration: Salary, Experience, and Education</b><br><sup><i>Plot 1 hypothesis <i></sup>')
+    fig.update_layout(width=800, height=800, template='simple_white',title='<b>Exploration: Salary, Experience, and Education</b><br><sup><i>Plot 1 hypothesis <i></sup>')
     st.plotly_chart(fig,theme=None)
     st.code('''highest_paid_jobs = df2.max().head(30) 
 fig = px.scatter(highest_paid_jobs, x="Salary", y="Years of Experience",size="Education Level", color="Education Level", marginal_x="violin",marginal_y="histogram",trendline="ols",
