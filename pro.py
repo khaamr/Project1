@@ -89,9 +89,9 @@ sorted_highest_paid_jobs''')
     import plotly.express as px
 
     fig = px.scatter(sorted_highest_paid_jobs, x='Job Title', y='Salary',
-                     color='Job Title', symbol='Job Title',  # Each job title gets its own marker color
+                     color='Job Title',   # Each job title gets its own marker color
                      size='Salary',
-                     size_max=40, title='Boxplot Distribution of Salaries')
+                     size_max=40, title='Boxplot Distribution of Salaries',template='simple_white')
 
     fig.update_layout(width=1000, height=600)
     fig.update_layout(showlegend=False)
